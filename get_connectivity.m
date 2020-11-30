@@ -11,7 +11,6 @@ partnames = struct2cell(findset);
 partnames = transpose(partnames(1,:));
 index = cell2mat(cellfun(@(x) any(strncmp(x,sub(1,:),2) || strncmp(x,sub(2,:),2)), partnames,'UniformOutput',false));
 
-% hello
 
 %gives error if participants are not found 
 if nargin <1 || isnumeric(sub) 
